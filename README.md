@@ -1,5 +1,5 @@
 <!-- <h1 align="center">Aleo Workshop</h1> -->
-<img alt="workshop" width="1412" src="aleo_workshop.png">
+<img alt="workshop" width="1412" src="images/aleo_workshop.png">
 <h3 align="center">📜 A starter guide to build applications on Aleo 📜</h3>
 
 <p align="center">
