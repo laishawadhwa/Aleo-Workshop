@@ -104,18 +104,5 @@ For Windows (Using direct .exe file):
 Result (demo):
 ![](images/deployToken.png)
 
-### Command
-For Macos/ Linux:
-```
-PRIVATEKEY="${PRIVATEKEY}"
-APPNAME="<project_name>"
-RECORD=""
-snarkos developer deploy "${APPNAME}.aleo" --private-key "${PRIVATEKEY}" --query "https://api.explorer.aleo.org/v1" --path "./${APPNAME}/build/" --broadcast "https://api.explorer.aleo.org/v1/testnet3/transaction/broadcast" --priority-fee 100000 --record "${RECORD}"
 
-```
-
-For Windows (Using direct .exe file):
-```
-.\snarkos developer deploy "${APPNAME}.aleo" --private-key "${PRIVATEKEY}" --query "https://api.explorer.aleo.org/v1" --path "./${APPNAME}/build/" --broadcast "https://api.explorer.aleo.org/v1/testnet3/transaction/broadcast" --priority-fee 100000 --record "${RECORD}"
-```
 
