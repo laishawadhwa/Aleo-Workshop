@@ -19,7 +19,7 @@ record Token {
     // The token owner, any record must be defined with the `owner` field.
     owner: address,
     // Token balance of the user.
-    balance: u32,
+    balance: u64,
 }
 ```
 
@@ -27,19 +27,19 @@ record Token {
 Define a mint transition that takes a balance and returns a token record.
 
 ```leo
-transition mint(amount: u32) -> Token {
-    return Token {
-        owner: self.caller,
-        balance: amount,
-    };
-}
+transition mint(owner: address, amount: u64) -> Token {
+        return Token {
+            owner: owner,
+            amount: amount,
+        };
+    }
 ```
 
 ### Step three: define transfer function
 Define a transfer transition that takes a receiver, amount and token and returns two tokens records
 
 ```leo
-transition transfer(receiver: address, transfer_amount: u32, input: Token) -> (Token, Token) {
+transition transfer(token: Token, to: address, amount: u64) -> (Token, Token) {
 <function body here>
 
     return (recipient, sender);
@@ -52,7 +52,7 @@ transition transfer(receiver: address, transfer_amount: u32, input: Token) -> (T
 
 First Test Mint Function.
 ```bash
-leo run mint 100u32
+leo run mint <owner address> 100u64
 ```
 
 The output should be a record of new 100 tokens.
@@ -61,7 +61,7 @@ The output should be a record of new 100 tokens.
 
 Then go ahead and test Transfer Function, let's transfer 10 tokens to other address.
 ```bash
-leo run transfer <recipient's address> 10u32 "<Token Record>"
+leo run transfer "<Token Record>" <recipient's address> 10u64
 ```
 
 Then the output should be two record where 10 tokens are owned under recipient's address, and remaining 90 tokens are owned by the original owner.
