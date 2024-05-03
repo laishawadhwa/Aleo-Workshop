@@ -21,8 +21,6 @@
 - 
 ## Build Guide
 
-Follow the instructions [here][1_setup_installation_guide.md] to setup the Development Environment to start building Dapps on Leo 
-
 ### Prerequisites
 
 This workshop requires the following prerequisites.
@@ -46,17 +44,14 @@ This workshop requires the following prerequisites.
 
 ### Installation
 
-To install Aleo and Leo, run:
-```
-./install.sh
-```
+Follow the instructions [here](1_setup_installation_guide.md) to setup the Development Environment to start building Dapps on Leo 
 
 ## IDE Support
 
 This workshop requires one of the following IDEs.
 - [VSCode](https://bit.ly/start-vscode)
 - [Sublime Text](https://bit.ly/start-sublime)
-- [IntelliJ IDEA](https://bit.ly/start-intellij)
+
 
 ### VSCode (Preferred)
 
@@ -82,20 +77,6 @@ Start by installing `Sublime Text` with [bit.ly/start-sublime](https://bit.ly/st
 #### Lastly, in Sublime Text, install [LSP-leo](https://packagecontrol.io/packages/LSP-leo):
 - On Windows/Linux: `ctrl + shift + p`, select **Package Control: Install Package**, type **LSP-leo**, and press **Enter**.
 - On macOS: `cmd + shift + p`, select **Package Control: Install Package**, type **LSP-leo**, and press **Enter**.
-
-</details>
-
-### IntelliJ IDEA
-
-<details><summary>Installation Steps</summary>
-
-Start by installing `IntelliJ IDEA` with [bit.ly/start-intellij](https://bit.ly/start-intellij).
-
-#### Next, in IntelliJ IDEA, open the **IntelliJ Marketplace** and select `Plugins`:
-- On Windows/Linux: `ctrl + ,` and select `Plugins` on the left hand bar
-- On macOS: `cmd + ,` and select `Plugins` on the left hand bar
-
-Lastly, type **Leo** into the search bar, and install the official Leo plugin.
 
 </details>
 
