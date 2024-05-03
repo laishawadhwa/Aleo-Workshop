@@ -58,7 +58,7 @@ This workshop requires one of the following IDEs.
 Start by installing `VSCode` with [bit.ly/start-vscode](https://bit.ly/start-vscode).
 
 #### Next, in VSCode, open the **VSCode Marketplace**, type **Leo** into the search bar, and proceed to install the Leo plugin.
-![Leo VSCode](./.resources/leo-vscode.png)
+![Leo VSCode](images/leo-ext.png)
 
 ### Sublime Text
 
@@ -86,12 +86,15 @@ Start by installing `Sublime Text` with [bit.ly/start-sublime](https://bit.ly/st
 For Macos/ Linux:
 ```
 PRIVATEKEY="${PRIVATEKEY}"
-APPNAME="<project_name>"
-
-snarkos developer deploy "${APPNAME}.aleo" --private-key "${PRIVATEKEY}" --query "https://api.explorer.aleo.org/v1" --path "./${APPNAME}/build/" --broadcast "https://api.explorer.aleo.org/v1/testnet3/transaction/broadcast" --priority-fee 0
-
+PROGRAM_ID="<project_name>"
+snarkos developer deploy \
+--private-key "${PRIVATEKEY}" \
+--query https://api.explorer.aleo.org/v1 \
+--priority-fee 0 \
+"${PROGRAM_ID}.aleo" \
+--path "./${PROGRAM_ID}/build/" \
+--broadcast https://api.explorer.aleo.org/v1/testnet3/transaction/broadcast
 ```
-
 For Windows (Using direct .exe file):
 ```
 .\snarkos developer deploy "${APPNAME}.aleo" --private-key "${PRIVATEKEY}" --query "https://api.explorer.aleo.org/v1" --path "./${APPNAME}/build/" --broadcast "https://api.explorer.aleo.org/v1/testnet3/transaction/broadcast" --priority-fee 0
@@ -99,7 +102,7 @@ For Windows (Using direct .exe file):
 
 ### Result
 Result (demo):
-![](./.resources/deployToken.png)
+![](images/deployToken.png)
 
 ### Command
 For Macos/ Linux:
