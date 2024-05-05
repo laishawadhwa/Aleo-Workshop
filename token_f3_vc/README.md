@@ -2,12 +2,4 @@
 
 ## Build Guide
 
-To compile this Aleo program, run:
-```bash
-snarkvm build
-```
-
-To execute this Aleo program, run:
-```bash
-snarkvm run hello
-```
+Refer to the readme file 4_create_your_own_token.md for build and execution scripts
