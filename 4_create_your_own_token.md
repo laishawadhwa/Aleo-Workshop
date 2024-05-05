@@ -35,7 +35,9 @@ transition mint(owner: address, amount: u64) -> Token {
     }
 ```
 
-### Step three: define transfer function
+You can refer to the [project directory](token_f3_vc) for setting up the project 
+
+### Step three: [TASK] Define transfer function
 Define a transfer transition that takes a receiver, amount and token and returns two tokens records
 
 ```leo
@@ -48,7 +50,7 @@ transition transfer(token: Token, to: address, amount: u64) -> (Token, Token) {
 
 ## Test Program
 
-### [Test Mint function
+### Test Mint function
 
 First Test Mint Function.
 ```bash
@@ -57,7 +59,7 @@ leo run mint <owner address> 100u64
 
 The output should be a record of new 100 tokens.
 
-### [TODO] Test Transfer function
+### [TASK] Test Transfer function
 
 Then go ahead and test Transfer Function, let's transfer 10 tokens to other address.
 ```bash
