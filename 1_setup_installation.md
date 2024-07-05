@@ -21,7 +21,8 @@ Clone the `leo` repository
 
 ```bash
 # Download the source code
-git clone https://github.com/AleoHQ/leo
+git clone https://github.com/ProvableHQ/leo/
+git checkout testnet-beta
 cd leo
 ```
 
@@ -44,11 +45,11 @@ For more details about how to use `leo` Cli, check out [this link](https://devel
 Clone the `snarkOS` repository
 
 ```bash
-git clone https://github.com/AleoHQ/snarkOS.git --depth 1
+git clone https://github.com/ProvableHQ/snarkOS.git
 cd snarkOS
 
-# Switch to the testnet3 branch
-git checkout testnet3
+# Switch to the testnet-beta branch
+git checkout testnet-beta
 ```
 
 [For Ubuntu users] A helper script to install dependencies is available. From the snarkOS directory, run:
@@ -105,5 +106,6 @@ Rust runs on many platforms, and there are many ways to install Rust. This guide
 - The above command needs to executed using WSL
 - If you prefer not to use the shell script, you may directly download rustup-init for windows [here](https://static.rust-lang.org/rustup/dist/x86_64-pc-windows-msvc/rustup-init.exe)
 - verify rust installation by runnin ```rustc --version``` in wsl 
+
 
 
