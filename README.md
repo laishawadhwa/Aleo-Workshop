@@ -106,7 +106,7 @@ snarkos developer deploy \
 
 ### Result
 Result (demo):
-![](images/deployToken.png)
+![](images/deployTokenUpdated.png)
 
 
 
