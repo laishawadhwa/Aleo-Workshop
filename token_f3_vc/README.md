@@ -1,4 +1,4 @@
-# token_baddies_tech.aleo
+# token_f3_vc.aleo
 
 ## Build Guide
 
