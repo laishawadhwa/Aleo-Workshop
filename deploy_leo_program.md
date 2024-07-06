@@ -12,7 +12,7 @@ snarkos developer deploy \
 --priority-fee 0 \
 "${PROGRAM_ID}.aleo" \
 --path ./build/ \
---broadcast https://api.explorer.aleo.org/v1/testnet3/transaction/broadcast
+--broadcast https://api.explorer.aleo.org/v1/testnet/transaction/broadcast
 ```
 
 ## Request for test tokens from the faucet
@@ -34,7 +34,7 @@ bash ./deploy.sh
 Mint Token
 ```bash
 snarkos developer execute \
---broadcast https://api.explorer.aleo.org/v1/testnet3/transaction/broadcast \
+--broadcast https://api.explorer.aleo.org/v1/testnet/transaction/broadcast \
 --private-key <PRIVATEKEY> \
 --query https://api.explorer.aleo.org/v1 \
 "${PROGRAM_ID}.aleo" mint 100u32
@@ -43,7 +43,7 @@ snarkos developer execute \
 Transfer Token
 ```bash
 snarkos developer execute \
---broadcast https://api.explorer.aleo.org/v1/testnet3/transaction/broadcast \
+--broadcast https://api.explorer.aleo.org/v1/testnet/transaction/broadcast \
 --private-key APrivateKey1zkpDZLpPdRhc2xNgyhbgPB7LY2KCfk1Yakn1RVwtaAEQAqe \
 --query https://api.explorer.aleo.org/v1 \
 "${PROGRAM_ID}.aleo" transfer <recipient_address> 20u32 <token_record>
