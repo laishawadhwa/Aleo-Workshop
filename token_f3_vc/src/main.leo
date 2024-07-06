@@ -28,7 +28,7 @@ program token_f3_vc.aleo {
         
     }
 
-    function balance_of(owner_balance: Token) -> u64 {
+    transition function balance_of(owner_balance: Token) -> u64 {
     // add your code here
 }
 
