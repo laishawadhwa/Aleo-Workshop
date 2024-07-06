@@ -84,25 +84,11 @@ Start by installing `Sublime Text` with [bit.ly/start-sublime](https://bit.ly/st
 
 ### Command (no fee)
 
-#### Deploying using Leo CLI
+#### Deploying using Leo CLI: For Macos/ Linux:
 
 ```
  leo deploy --private-key <add your ptovatke key here>
 ```
-For Macos/ Linux:
-```
-PROGRAM_ID="<Your Token Project Name>"
-
-snarkos developer deploy \
---private-key <PRIVATEKEY> \
---query https://api.explorer.aleo.org/v1 \
---priority-fee 0 \
-"${PROGRAM_ID}.aleo" \
---path ./build/ \
---broadcast https://api.explorer.aleo.org/v1/testnet/transaction/broadcast
---network 1
-```
-
 
 ### Result
 Result (demo):
