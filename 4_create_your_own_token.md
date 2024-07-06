@@ -37,7 +37,8 @@ transition mint(owner: address, amount: u64) -> Token {
 
 You can refer to the [project directory](token_f3_vc) for setting up the project 
 
-### Step three: [TASK] Define transfer function
+### Step three: 
+#### [TASK] (A) Define transfer function
 Define a transfer transition that takes a receiver, amount and token and returns two tokens records
 
 ```leo
@@ -47,7 +48,14 @@ transition transfer(token: Token, to: address, amount: u64) -> (Token, Token) {
     return (recipient, sender);
 }
 ```
+#### [TASK] (B) Define balance_of function
 
+Define the code block which returns the balance of a particular owner addresss given the record. Expected ouput balance in u64
+
+```leo
+function balance_of(owner_balance: Token) -> u64 {
+    // add your code here
+}
 ## Test Program
 
 ### Test Mint function
