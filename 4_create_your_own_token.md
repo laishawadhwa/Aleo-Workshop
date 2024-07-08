@@ -56,6 +56,7 @@ Define the code block which returns the balance of a particular owner addresss g
 function balance_of(owner_balance: Token) -> u64 {
     // add your code here
 }
+```
 ## Test Program
 
 ### Test Mint function
