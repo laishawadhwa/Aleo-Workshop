@@ -38,7 +38,7 @@ This workshop requires the following prerequisites.
 
 ## Aleo Testnet - how to get credits?
 
-[Aleo Discord](https://discord.com/invite/j4adT32X) Using faucet to get Aleo.
+[Aleo Discord](https://discord.gg/2ZEwFGnA) Using faucet to get Aleo.
 
 `/sendcredits {WalletAddress} 15`
 
