@@ -87,7 +87,7 @@ Start by installing `Sublime Text` with [bit.ly/start-sublime](https://bit.ly/st
 #### Deploying using Leo CLI: For Macos/ Linux:
 
 ```
- leo deploy --private-key <add your ptovatke key here>
+ leo deploy --private-key <add your private key here>
 ```
 
 ### Result
