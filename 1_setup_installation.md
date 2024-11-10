@@ -22,7 +22,6 @@ Clone the `leo` repository
 ```bash
 # Download the source code
 git clone https://github.com/ProvableHQ/leo/
-git checkout testnet-beta
 cd leo
 ```
 
